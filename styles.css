@@ -1,0 +1,175 @@
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', Arial, sans-serif;
+  background-color: #0f172a;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Radial Gradient Layer */
+.radial-gradient-layer {
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(600px circle at 50% 50%, rgba(29, 78, 216, 0.15), transparent 80%);
+  z-index: 1;
+  transition: background 0.3s ease-in-out;
+}
+
+/* Layout Styles */
+.layout {
+  display: flex;
+  width: 80%;
+  max-width: 1200px;
+  border-radius: 12px;
+  overflow: hidden;
+  z-index: 2;
+}
+
+/* Left Column */
+.left-column {
+  width: 25%;
+  padding: 2rem;
+  text-align: center;
+}
+
+.left-column header h1 {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+.left-column h2 {
+  font-size: 1.5rem;
+  color: #989da4;
+  margin-bottom: 1rem;
+}
+
+.left-column a {
+  color: #989da4;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.left-column a:hover {
+  color: #29f3b0;
+}
+
+/* Right Column */
+.right-column {
+  width: 75%;
+  padding: 2rem;
+}
+
+.right-column section {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.right-column section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.right-column section:hover h2{
+  color: #29f3b0;
+  border-bottom: 2px solid #29f3b0;
+  display: inline-block;
+  padding-bottom: 0.2rem;
+  margin-bottom: 1rem;
+}
+
+.right-column h2 {
+  color: #989da4;
+  display: inline-block;
+  padding-bottom: 0.2rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  color: #94a3b8; /* Updated color */
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* Lists */
+ul {
+  list-style: disc;
+  margin-left: 1.5rem;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+  color: #94a3b8; /* Match paragraph color */
+}
+
+.download-resume-btn {
+  display: inline-block;
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #1e6e54; /* Blue button background */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+.download-resume-btn:hover {
+  background-color: #2fa781; /* Lighter blue on hover */
+}
+
+.download-resume-btn:active {
+  background-color: #2fa781; /* Darker blue on click */
+}
+
+/* Strengths Section */
+#strengths {
+  margin: 2rem 0;
+  color: #94a3b8; /* Matches text color used for <p> */
+}
+
+#strengths h3 {
+  font-size: 1.5rem;
+  color: #9cdbc7; /* Highlighted color for the heading */
+  margin-bottom: 1rem;
+}
+
+.strengths-list {
+  list-style: none; /* Remove default bullet points */
+  padding: 0;
+  display: flex; /* Align items horizontally */
+  gap: 1rem; /* Space between items */
+  flex-wrap: wrap; /* Allow wrapping if the screen size is small */
+}
+
+.strengths-list li {
+  background-color: rgba(255, 255, 255, 0.1); /* Subtle dark background */
+  color: #2fa781; /* Teal color for text */
+  padding: 0.5rem 1rem; /* Add padding inside the box */
+  border-radius: 1rem; /* Rounded corners for the list items */
+  font-size: 1rem;
+  font-weight: 500;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effects */
+}
+
+.strengths-list li:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+}
+
