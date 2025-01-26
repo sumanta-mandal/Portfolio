@@ -173,3 +173,34 @@ ul li {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
 }
 
+.portfolio-image {
+  width: 170px;
+  height: 100px;
+  margin-right: 10px; /* Space between image and text */
+}
+
+.portfolio-link {
+  display: flex;
+  align-items: center; /* Center the text vertically with the image */
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  padding: 10px;
+  list-style-type: none;
+}
+
+li:hover {
+  background-color: #f0f0f0;
+}
+
+li h3 {
+  margin: 0;
+  color: #94a3b8;
+  transition: color 0.3s ease;
+}
+
+li:hover h3 {
+  color: #29f3b0; /* Change color on hover */
+}
