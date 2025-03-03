@@ -213,13 +213,13 @@ li:hover h3 {
   }
 
   .left-column {
-    width: 100%;
+    width: 90%;
     padding: 1.5rem;
     text-align: center;
   }
 
   .right-column {
-    width: 100%;
+    width: 90%;
     padding: 1.5rem;
   }
 
@@ -236,7 +236,7 @@ li:hover h3 {
   }
 
   .download-resume-btn {
-    width: 100%;
+    width: 80%;
   }
 
   .strengths-list {
