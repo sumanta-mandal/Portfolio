@@ -83,7 +83,7 @@ body {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-.right-column section:hover h2{
+.right-column section:hover h2 {
   color: #29f3b0;
   border-bottom: 2px solid #29f3b0;
   display: inline-block;
@@ -99,7 +99,7 @@ body {
 }
 
 p {
-  color: #94a3b8; /* Updated color */
+  color: #94a3b8;
   line-height: 1.6;
   margin-bottom: 1rem;
 }
@@ -112,7 +112,7 @@ ul {
 
 ul li {
   margin-bottom: 0.5rem;
-  color: #94a3b8; /* Match paragraph color */
+  color: #94a3b8;
 }
 
 .download-resume-btn {
@@ -121,7 +121,7 @@ ul li {
   font-size: 1rem;
   font-weight: 600;
   color: #ffffff;
-  background-color: #1e6e54; /* Blue button background */
+  background-color: #1e6e54;
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -130,58 +130,58 @@ ul li {
 }
 
 .download-resume-btn:hover {
-  background-color: #2fa781; /* Lighter blue on hover */
+  background-color: #2fa781;
 }
 
 .download-resume-btn:active {
-  background-color: #2fa781; /* Darker blue on click */
+  background-color: #2fa781;
 }
 
 /* Strengths Section */
 #strengths {
   margin: 2rem 0;
-  color: #94a3b8; /* Matches text color used for <p> */
+  color: #94a3b8;
 }
 
 #strengths h3 {
   font-size: 1.5rem;
-  color: #9cdbc7; /* Highlighted color for the heading */
+  color: #9cdbc7;
   margin-bottom: 1rem;
 }
 
 .strengths-list {
-  list-style: none; /* Remove default bullet points */
+  list-style: none;
   padding: 0;
-  display: flex; /* Align items horizontally */
-  gap: 1rem; /* Space between items */
-  flex-wrap: wrap; /* Allow wrapping if the screen size is small */
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .strengths-list li {
-  background-color: rgba(255, 255, 255, 0.1); /* Subtle dark background */
-  color: #2fa781; /* Teal color for text */
-  padding: 0.5rem 1rem; /* Add padding inside the box */
-  border-radius: 1rem; /* Rounded corners for the list items */
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #2fa781;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
   font-size: 1rem;
   font-weight: 500;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effects */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .strengths-list li:hover {
-  transform: scale(1.05); /* Slightly enlarge on hover */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .portfolio-image {
   width: 170px;
   height: 100px;
-  margin-right: 10px; /* Space between image and text */
+  margin-right: 10px;
 }
 
 .portfolio-link {
   display: flex;
-  align-items: center; /* Center the text vertically with the image */
+  align-items: center;
   text-decoration: none;
   color: inherit;
 }
@@ -202,5 +202,95 @@ li h3 {
 }
 
 li:hover h3 {
-  color: #29f3b0; /* Change color on hover */
+  color: #29f3b0;
+}
+
+/* ---- MOBILE RESPONSIVE STYLES ---- */
+@media screen and (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .left-column {
+    width: 100%;
+    padding: 1.5rem;
+    text-align: center;
+  }
+
+  .right-column {
+    width: 100%;
+    padding: 1.5rem;
+  }
+
+  .right-column section {
+    padding: 1rem;
+  }
+
+  .left-column header h1 {
+    font-size: 1.8rem;
+  }
+
+  .left-column h2 {
+    font-size: 1.3rem;
+  }
+
+  .download-resume-btn {
+    width: 100%;
+  }
+
+  .strengths-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .portfolio-image {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+  }
+
+  .portfolio-link {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .left-column,
+  .right-column {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  li h3 {
+    margin: 0;
+    padding: 20px 0 0 0;
+    color: #94a3b8;
+    transition: color 0.3s ease;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  ul {
+    margin-left: 1rem;
+  }
+
+  .download-resume-btn {
+    font-size: 0.9rem;
+    padding: 0.7rem 1rem;
+  }
+
+  .portfolio-image {
+    max-width: 200px;
+  }
 }
